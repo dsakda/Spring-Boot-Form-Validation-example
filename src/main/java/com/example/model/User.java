@@ -34,7 +34,7 @@ public class User {
     @AssertTrue
     private boolean married;
 
-    @DateTimeFormat(pattern = "yyyy-mm-dd")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date birthday;
 
     @NotBlank
