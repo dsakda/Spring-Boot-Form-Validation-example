@@ -2,7 +2,7 @@ package com.example.model;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.validation.constraints.*;
 
@@ -34,7 +34,7 @@ public class User {
     @AssertTrue
     private boolean married;
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     private Date birthday;
 
     @NotBlank
